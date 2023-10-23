@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Evisko produktside</title>
+</head>
+<body>
+    <div id="grid-container">
+        <header>
+            <nav>
+                <a href="index.html" id="logo">Evisko</a>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produkt.html">Products</a></li>
+                    <li><a href="chekout.html">Handlekurv</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h1>produkter</h1>
+                <h3>Damesko</h3>
+            </section>
+        </header>
+        <main>
+            <!--Seksjon 1-->
+            <section class="flex-section">
+                <img src="img/fashion-1284496_1280.jpg" alt="Image by Pexels from Pixabay">
+                <section>
+                    <h2>Pen Sko</h2>
+                    <p>Pen sko for kvinner er prikker over i-en.</p>
+                </section>
+                
+            </section>
+            <!--seksjon 2-->
+            <section class="flex-section">
+                <img src="img/shoes-1433925_1280.jpg" alt="Image by Jason Goh from Pixabay">
+                <section>
+                    <h2>joggesko</h2>
+                <p>Joggesko for damer, med en street look.</p>
+                    </section>
+                </section>
+                
+            <!--seksjon 3-->
+            <section id="services">
+                <h2>Om oss</h2>
+                <article>
+                    <h3>Retur side</h3>
+                    <p>60 dagers fornøyd garanti, returner om missfornøyd.</p>
+                </article>
+                <article>
+                    <h3>Kontakt oss</h3>
+                    <p>Kontakt oss, om spørsmål eller problemer.</p>
+                </article>
+                <article>
+                    <h3>Kundeklubb</h3>
+                    <p>Vår kundeklubb gir deg beste priser og kampanjer.</p>
+                </article>
+            </section>
+    
+    
+        </main>
+        <footer>
+    
+        </footer>
+        </div>
+        <script>
+    
+            let x = document.querySelector(".navbar")
+    
+           
+            document.getElementById("ham").addEventListener("click", (e) =>{
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                }else {
+                    x.className = "navbar"
+                }
+               
+            })
+        </script>
+    
+</body>
+</html>

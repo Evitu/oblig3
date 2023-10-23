@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Evisko</title>
+</head>
+    <div id="grid-container">
+    <header>
+        <nav>
+            <a href="index.html" id="logo">Evisko</a>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i id="ham" class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produkt.html">Products</a></li>
+                <li><a href="chekout.html">Handlekurv</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h3>rask levering, helt hjem, 60 dagers fornøyd garanti.</h3>
+        </section>
+    </header> 
+    <main>
+        <!--1-->
+        <section class="flex-section">
+            <img src="img/woman-3220835_1280.jpg" alt="Image by Irina Gromovataya from Pixabay">
+            <article>
+                <h2>Dame sko</h2>
+                <p>Damesko, for både uformel og formelle annledninger. Det er både designer sko og vår eget merke</p>
+            </article>
+                <!--2-->
+                <article>
+                    <img src="img/man-1866574_1280.jpg" alt="Image by Pexels from Pixabay">
+                    <section>
+                        <h2>Herre Sko</h2>
+                        <p>Herresko, for både uformel og formelle annledninger. Det er både designer sko og vår eget merke.</p>
+                    </section>
+                </article>
+        <!--3-->
+                <article>
+            <img src="img/street-3380337_1280.jpg" alt="Image by Bob Dmyt from Pixabay">
+            <section>
+                <h2>Barne sko</h2>
+                <p>Barnesko, for både uformel og formelle annledninger. Det er både designer sko og vår eget merke.</p>
+            </section>
+        </article>
+
+        
+    </section>
+        <!--4-->
+        <section id="services">
+            <h2>Om oss</h2>
+            <article>
+                <h3>Retur side</h3>
+                <p>60 dagers fornøyd garanti, returner om missfornøyd.</p>
+            </article>
+            <article>
+                <h3>Kontakt oss</h3>
+                <p>Kontakt oss, om spørsmål eller problemer.</p>
+            </article>
+            <article>
+                <h3>Kundeklubb</h3>
+                <p>Vår kundeklubb gir deg beste priser og kampanjer.</p>
+            </article>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    </div>
+    <script>
+
+        let x = document.querySelector(".navbar")
+
+       
+        document.getElementById("ham").addEventListener("click", (e) =>{
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            }else {
+                x.className = "navbar"
+            }
+           
+        })
+    </script>
+    
+</body>
+</html>
